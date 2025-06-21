@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <!-- Video by Kelly from Pexels -->
+            <source src="C:\Users\dell\Desktop\login\We Are Sales Conference 2022 _ The official aftermovie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <img src="logo.png" alt="Club Logo" class="main-logo" id="main-logo">
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
+
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <!-- Logo is now outside -->
+        </div>
+        <a href="#" data-form="join">Ajouter admin</a>
+        <a href="#" data-form="contact">Ajouter evenements </a>
+        <a href="#" data-form="about">Afficher evenements </a>
+        <a href="#" data-form="events">modifer evenements </a>
+        <a href="#" data-form="events">Afficher clients insctris dans un evenements </a>
+    </nav>
+
+    <div class="content-wrapper">
+        <main>
+            <h1>WELCOME TO THE CLUB</h1>
+            <p>Join us and be part of something extraordinary.</p>
+        </main>
+    </div>
+
+    <div id="form-overlay" class="form-overlay">
+        <div id="form-container" class="form-container">
+            <span class="close-btn">&times;</span>
+            <h2 id="form-title"></h2>
+            <div id="form-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
